@@ -19,3 +19,5 @@ config ARCH_CHIP_CHIP_NAME
 	select ARCH_HAVE_FPU
 
 endchoice
+
+endif

@@ -20,13 +20,8 @@
 
 include $(TOPDIR)/Make.defs
 
-CSRCS = vendor_name_boot.c vendor_name_bringup.c
-
-ifeq ($(CONFIG_BOARDCTL),y)
-  CSRCS += vendor_name_appinit.c
-endif
-
+CSRCS = vendor_name_ap.c
 RCSRCS = etc/init.d/rc.sysinit etc/init.d/rcS
-RCRAWS = etc/group etc/passwd
+RCRAWS = etc/group
 
 include $(TOPDIR)/boards/Board.mk

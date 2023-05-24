@@ -33,4 +33,4 @@ include armv7-m/Make.defs
 # Specify our C code within this directory to be included
 
 CHIP_CSRCS += vendor_name_start.c vendor_name_irq.c vendor_name_uart.c
-CHIP_CSRCS += vendor_name_oneshot.c
+CHIP_CSRCS += vendor_name_oneshot.c vendor_name_allocateheap.c

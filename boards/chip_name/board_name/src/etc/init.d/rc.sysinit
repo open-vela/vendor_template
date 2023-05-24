@@ -19,3 +19,11 @@
  ****************************************************************************/
 
 #include <nuttx/config.h>
+
+#ifdef CONFIG_FS_TMPFS
+mount -t tmpfs /tmpfs
+#endif
+
+#ifdef CONFIG_FS_PROCFS
+mount -t procfs /proc
+#endif
